@@ -23,8 +23,8 @@ def launchBrowser():
     driver.quit()
 
 def test_Login(launchBrowser):
-    driver.find_element(By.ID, "email").send_keys("*******************")
-    driver.find_element(By.ID, "pass").send_keys("*****************")
+    driver.find_element(By.ID, "email").send_keys("***************")
+    driver.find_element(By.ID, "pass").send_keys("**************")
     driver.find_element(By.NAME, "login").click()
     assert driver.current_url == "https://www.facebook.com/"
 
